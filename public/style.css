@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-background-color-darkmode: black;
+}
+
+body {
+  background: var(--main-background-color-darkmode);
+}
+
+/* Header ------------------------------------------------------------ */
+/* Header ------------------------------------------------------------ */
+/* Header ------------------------------------------------------------ */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.svg-logo {
+  height: 5rem;
+  width: 10rem;
+  fill: #cf635c;
+}
