@@ -26,3 +26,18 @@ header {
   width: 10rem;
   fill: #cf635c;
 }
+
+/* Homepage ------------------------------------------------------------ */
+/* Homepage ------------------------------------------------------------ */
+/* Homepage ------------------------------------------------------------ */
+
+.section-featured {
+  display: flex;
+  justify-content: center;
+}
+
+.img-featured-placeholder {
+  height: auto;
+  width: 90%;
+  border-radius: 1rem;
+}
