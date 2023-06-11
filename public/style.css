@@ -34,6 +34,10 @@ header {
 /* Homepage ------------------------------------------------------------ */
 /* Homepage ------------------------------------------------------------ */
 
+main {
+  margin-bottom: 5rem;
+}
+
 .section-featured {
   display: flex;
   justify-content: center;
@@ -81,6 +85,7 @@ h2 {
 .p-maker {
   color: #cf635c;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Footer ------------------------------------------------------------ */
@@ -106,7 +111,6 @@ nav svg {
   height: 1.5rem;
   width: 1.5rem;
   fill: white;
-  border: 1px white solid;
 }
 
 nav a {
@@ -118,11 +122,4 @@ nav a {
 a span {
   color: white;
   font-size: 0.75rem;
-}
-
-.svg-recent{
-  height: 1.5rem;
-  width: 1.5rem;
-  fill: white;
-  border: 1px white solid;
 }
