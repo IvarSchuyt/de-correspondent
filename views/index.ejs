@@ -7,10 +7,38 @@
             <img class="img-featured-placeholder" src="/assets/placeholder.webp" alt="placeholderafbeelding"/>
         </section>
 
+        <!-- Onze shows -->
+        <h2> Onze shows </h2>
 
-
-
+        <section class="section-our-shows">
 <% data.forEach(collection => { %>
+
+            <div class="div-show">
+                testtesttesttesttesttest
+            </div>
+
 <% }); %>
+        </section>
+
+        <!-- Onze shows -->
+        <h2> Recente afleveringen </h2>
+        <section class="section-recent">
+<% data.forEach(collection => { %>
+            
+        <div class="div-container-episode">
+
+            <div class="div-episode">
+                 testtesttesttesttesttest
+             </div>
+
+                <p class="p-maker"> Maker show</p>
+        </div>
+
+            
+<% }); %>
+        </section>
+
+</main>
+
 
 <%- include('./partials/foot') %>

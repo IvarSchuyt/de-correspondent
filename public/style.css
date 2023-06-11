@@ -1,10 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 :root {
   --main-background-color-darkmode: black;
+  --common-border-radius: 1rem;
 }
 
 body {
@@ -39,5 +42,87 @@ header {
 .img-featured-placeholder {
   height: auto;
   width: 90%;
-  border-radius: 1rem;
+  border-radius: var(--common-border-radius);
+}
+
+h2 {
+  margin: 2rem 0 1rem 1rem;
+  color: white;
+}
+
+.section-our-shows,
+.section-recent {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 1rem;
+  overflow-x: scroll;
+}
+
+.div-show {
+  background-color: white;
+  width: 10rem;
+  height: 15rem;
+  border-radius: var(--common-border-radius);
+}
+
+.div-container-episode {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-episode {
+  background-color: white;
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--common-border-radius);
+}
+
+.p-maker {
+  color: #cf635c;
+  margin-top: 2rem;
+}
+
+/* Footer ------------------------------------------------------------ */
+/* Footer ------------------------------------------------------------ */
+/* Footer ------------------------------------------------------------ */
+
+footer {
+  background: black;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+nav svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: white;
+  border: 1px white solid;
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a span {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.svg-recent{
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: white;
+  border: 1px white solid;
 }
