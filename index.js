@@ -19,11 +19,25 @@ app.use(express.static("public"));
 
 // Create a route for the index page
 app.get("/", (request, response) => {
-  const message = "De Correspondent - Podcasts";
-
   // Fetch the data from the url
   fetchJson(collectionsJson).then((data) => {
-    response.render("index", { ...data, message });
+    response.render("index", { ...data });
+  });
+});
+
+// Create a route for the recent page
+app.get("/recent", (request, response) => {
+  // Fetch the data from the url
+  fetchJson(collectionsJson).then((data) => {
+    response.render("recent", { ...data });
+  });
+});
+
+// Create a route for the more page
+app.get("/more", (request, response) => {
+  // Fetch the data from the url
+  fetchJson(collectionsJson).then((data) => {
+    response.render("more", { ...data });
   });
 });
 

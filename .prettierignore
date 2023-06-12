@@ -1,2 +1,3 @@
 views/partials
 views/index.ejs
+views/recent.ejs
