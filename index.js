@@ -5,7 +5,7 @@ import fetch from "node-fetch";
 const app = express();
 
 const collectionsJson =
-  "https://raw.githubusercontent.com/IvarSchuyt/de-correspondent/main/public/Course/collections.json";
+  "https://raw.githubusercontent.com/IvarSchuyt/de-correspondent/main/public/course/collections.json";
 
 // Set EJS as the template engine and specify the views directory
 app.set("view engine", "ejs");
