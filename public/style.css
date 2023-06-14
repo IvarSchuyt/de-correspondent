@@ -41,12 +41,27 @@ main {
 .section-featured {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .img-featured-placeholder {
   height: auto;
   width: 90%;
   border-radius: var(--common-border-radius);
+}
+
+.div-featured-opacity {
+  height: 15%;
+  width: 90%;
+  border-radius: var(--common-border-radius);
+  background: black;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(0, 0, 0, 1) 100%
+  );  
 }
 
 h2 {
@@ -92,7 +107,7 @@ h2 {
 /* Recent ------------------------------------------------------------ */
 /* Recent ------------------------------------------------------------ */
 
-.section-recent-episodes{
+.section-recent-episodes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -132,14 +147,14 @@ nav figure {
   align-items: center;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
 }
 
-a figcaption{
+a figcaption {
   color: white;
   font-size: 0.75rem;
   margin-top: 0.5rem;
@@ -154,7 +169,7 @@ a figcaption{
     height: auto;
     width: 35%;
   }
-  .div-shows-and-episodes{
+  .div-shows-and-episodes {
     display: flex;
     margin-top: 2rem;
     margin-left: 4rem;
