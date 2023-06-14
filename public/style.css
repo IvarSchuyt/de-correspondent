@@ -104,7 +104,7 @@ h2 {
 /* Footer ------------------------------------------------------------ */
 /* Footer ------------------------------------------------------------ */
 
-footer {
+.footer-mobile {
   background: black;
   height: 4rem;
   width: 100%;
@@ -143,4 +143,28 @@ a figcaption{
   color: white;
   font-size: 0.75rem;
   margin-top: 0.5rem;
+}
+
+/* DESKTOPVERSIE ------------------------------------------------------------ */
+/* DESKTOPVERSIE ------------------------------------------------------------ */
+/* DESKTOPVERSIE ------------------------------------------------------------ */
+
+@media only screen and (min-width: 850px) {
+  .img-featured-placeholder {
+    height: auto;
+    width: 35%;
+  }
+  .div-shows-and-episodes{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 4rem;
+  }
+  .section-our-shows,
+  .section-recent {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+  .footer-mobile {
+    display: none;
+  }
 }
