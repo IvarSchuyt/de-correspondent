@@ -8,6 +8,7 @@
 :root {
   --main-background-color-darkmode: black;
   --common-border-radius: 1rem;
+  --main-font-color-darkmode: white;
 }
 
 body {
@@ -61,12 +62,12 @@ main {
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 1) 25%,
     rgba(0, 0, 0, 1) 100%
-  );  
+  );
 }
 
 h2 {
   margin: 2rem 0 1rem 1rem;
-  color: white;
+  color: var(--main-font-color-darkmode);
 }
 
 .section-our-shows,
@@ -155,9 +156,13 @@ footer a {
 }
 
 a figcaption {
-  color: white;
+  color: var(--main-font-color-darkmode);
   font-size: 0.75rem;
   margin-top: 0.5rem;
+}
+
+.footer-desktop {
+  display: none;
 }
 
 /* DESKTOPVERSIE ------------------------------------------------------------ */
@@ -181,5 +186,9 @@ a figcaption {
   }
   .footer-mobile {
     display: none;
+  }
+  .footer-desktop {
+    display: block;
+    color: var(--main-font-color-darkmode);
   }
 }
