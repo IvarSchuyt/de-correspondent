@@ -65,7 +65,15 @@ main {
   );
 }
 
-h2 {
+h2{
+  position: absolute;
+  color: var(--main-font-color-darkmode);
+  font-size: 2rem;
+  margin-bottom: 7rem;
+}
+
+h3 {
+  font-size: 1.5rem;
   margin: 2rem 0 1rem 1rem;
   color: var(--main-font-color-darkmode);
 }
@@ -80,10 +88,22 @@ h2 {
 }
 
 .div-show {
-  background-color: white;
+  background: white;
   width: 10rem;
   height: 15rem;
   border-radius: var(--common-border-radius);
+}
+
+.picture-show img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--common-border-radius);
+}
+
+.p-show-title {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
 .div-container-episode {
@@ -98,7 +118,7 @@ h2 {
   border-radius: var(--common-border-radius);
 }
 
-.p-maker {
+.p-maker-episode {
   color: #cf635c;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -162,7 +182,11 @@ a figcaption {
 }
 
 .footer-desktop {
-  display: none;
+  margin: 0rem 0rem 2rem 5rem;
+}
+
+ul {
+  list-style: none;
 }
 
 /* DESKTOPVERSIE ------------------------------------------------------------ */

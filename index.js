@@ -21,7 +21,23 @@ app.use(express.static("public"));
 app.get("/", (request, response) => {
   // Fetch the data from the url
   fetchJson(collectionsJson).then((data) => {
-    response.render("index", { ...data });
+    let mainVisuals = {};
+    let imageFiles = {};
+
+    // Loop door alle included variabelen heen
+    data.included.forEach((element) => {
+      if (element.type == "MainVisual") {
+        mainVisuals[element.id] = element.relationships.image.data.id;
+      } else if (element.type == "ImageFile") {
+        imageFiles[element.id] = element.attributes.sourceSet;
+      }
+    });
+    console.log(mainVisuals, imageFiles);
+    response.render("index", {
+      ...data,
+      mainVisuals: mainVisuals,
+      imageFiles: imageFiles,
+    });
   });
 });
 

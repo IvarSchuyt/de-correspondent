@@ -5,38 +5,42 @@
         <section class="section-featured">
             <img class="img-featured-placeholder" src="/assets/placeholder.webp" alt="placeholderafbeelding" height="300" width="300"/>
             <div class="div-featured-opacity"></div>
+            <h2>Uitgelichte aflevering</h2>
         </section>
 
 <div class="div-shows-and-episodes">
 
         <!-- Onze shows -->
         <div class="div-content-left">
-        <h2> Onze shows </h2>
+        <h3> Onze shows </h3>
 
         <section class="section-our-shows">
 <% data.forEach(collection => { %>
 
             <div class="div-show">
-                testtesttesttesttesttest
+                <picture class="picture-show">
+                        <img  srcset=".<%= imageFiles[mainVisuals[collection.relationships.mainVisual.data.id]] %>" alt="<%= collection.attributes.title %>" width="320" height="320" />
+                </picture>
+                <p class="p-show-title"><%= collection.attributes.title %></p>
             </div>
-
+        
 <% }); %>
         </section>
         </div>
 
         <!-- Recente afleveringen -->
         <div class="div-content-right">
-        <h2> Recente afleveringen </h2>
+        <h3> Recente afleveringen </h3>
         <section class="section-recent">
 <% data.forEach(collection => { %>
             
         <div class="div-container-episode">
-
+        
             <div class="div-episode">
                  testtesttesttesttesttest
              </div>
-
-                <p class="p-maker"> Maker show</p>
+        
+                <p class="p-maker-episode"> Maker aflevering</p>
         </div>
 
             
