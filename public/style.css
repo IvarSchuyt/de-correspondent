@@ -51,20 +51,6 @@ main {
   border-radius: var(--common-border-radius);
 }
 
-.div-featured-opacity {
-  height: 15%;
-  width: 90%;
-  border-radius: var(--common-border-radius);
-  background: black;
-  position: absolute;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 25%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
-
 h2 {
   position: absolute;
   color: var(--main-font-color-darkmode);
@@ -92,6 +78,11 @@ h3 {
   width: 10rem;
   height: 15rem;
   border-radius: var(--common-border-radius);
+}
+
+.a-show {
+  text-decoration: none;
+  color: inherit;
 }
 
 .picture-show img {
@@ -185,6 +176,10 @@ a figcaption {
   display: none;
 }
 
+h4 {
+  color: var(--main-font-color-darkmode);
+}
+
 ul {
   list-style: none;
   margin: 0rem 0rem 2rem 5rem;
@@ -200,34 +195,41 @@ ul {
     display: flex;
   }
 
-  .div-half-page-left{
-    margin-left: 12.5rem;
+  .div-half-page-left,
+  .div-half-page-right {
+    width: 50vw;
   }
 
   .section-featured {
-    max-width: 40%;
+    max-width: 80%;
+    margin: 3rem 0 0 12.5rem;
+  }
+
+  .div-half-page-left h3 {
+    margin: 4rem 0 0 15rem;
   }
 
   .img-featured-placeholder {
     height: auto;
-    max-width: 40%;
-  }
-
-  .div-featured-opacity {
-    max-width: 40%;
-    max-height: 5%;
+    margin-top: -2rem;
   }
 
   .div-shows-and-episodes {
     display: flex;
     margin-top: 2rem;
     margin-left: 4rem;
-    max-width: 40%;
+    width: 50%;
   }
 
   .section-our-shows,
   .section-recent {
     flex-wrap: wrap;
+    overflow: visible;
+  }
+
+  .section-our-shows{
+    min-width: 50%;
+    padding-right: 5rem;
   }
 
   .footer-mobile {

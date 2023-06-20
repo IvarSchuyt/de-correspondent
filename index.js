@@ -96,7 +96,7 @@ app.get("/recent", (request, response) => {
 
     if (item) {
       const itemId = item.id;
-      const itemJsonUrl = `https://raw.githubusercontent.com/IvarSchuyt/de-correspondent/main/public/course/collection.json`;
+      const itemJsonUrl = `https://raw.githubusercontent.com/IvarSchuyt/de-correspondent/main/public/course/collection${itemId}.json`;
 
       fetchJson(itemJsonUrl).then((itemData) => {
         // Fetch main visuals and image files
