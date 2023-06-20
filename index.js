@@ -32,7 +32,6 @@ app.get("/", (request, response) => {
         imageFiles[element.id] = element.attributes.sourceSet;
       }
     });
-    console.log(mainVisuals, imageFiles);
     response.render("index", {
       ...data,
       mainVisuals: mainVisuals,
@@ -41,11 +40,91 @@ app.get("/", (request, response) => {
   });
 });
 
-// Create a route for the recent page
-app.get("/recent", (request, response) => {
-  // Fetch the data from the url
+// Definieer de route voor de pagina per show ("/collection/:slug") (dankje Stefan)
+app.get("/collection/:slug", (request, response) => {
+  const slug = request.params.slug;
+
   fetchJson(collectionsJson).then((data) => {
-    response.render("recent", { ...data });
+    const collections = data.data;
+    const item = collections.find(
+      (collection) => collection.attributes.slug === slug
+    );
+
+    if (item) {
+      const itemId = item.id;
+      const itemJsonUrl = `https://raw.githubusercontent.com/IvarSchuyt/de-correspondent/main/public/course/collection/${itemId}.json`;
+
+      fetchJson(itemJsonUrl).then((itemData) => {
+        // Fetch main visuals and image files
+        var mainVisuals = {};
+        var imageFiles = {};
+
+        data.included.forEach((element) => {
+          if (element.type === "MainVisual") {
+            mainVisuals[element.id] = element.relationships.image.data.id;
+          } else if (element.type === "ImageFile") {
+            imageFiles[element.id] = element.attributes.sourceSet;
+          }
+        });
+
+        fetchJson(collectionsJson).then((data) => {});
+
+        const message = "De Correspondent - " + item.attributes.title;
+        response.render("collection", {
+          ...data,
+          item,
+          itemData,
+          message,
+          mainVisuals,
+          imageFiles,
+        });
+        console.log(itemJsonUrl);
+      });
+    }
+  });
+});
+
+// Definieer de route voor de recente afleveringen ("/recent")
+app.get("/recent", (request, response) => {
+  const slug = request.params.slug;
+
+  fetchJson(collectionsJson).then((data) => {
+    const collections = data.data;
+    const item = collections.find(
+      (collection) => collection.attributes.slug === slug
+    );
+
+    if (item) {
+      const itemId = item.id;
+      const itemJsonUrl = `https://raw.githubusercontent.com/IvarSchuyt/de-correspondent/main/public/course/collection.json`;
+
+      fetchJson(itemJsonUrl).then((itemData) => {
+        // Fetch main visuals and image files
+        var mainVisuals = {};
+        var imageFiles = {};
+
+        data.included.forEach((element) => {
+          if (element.type === "MainVisual") {
+            mainVisuals[element.id] = element.relationships.image.data.id;
+          } else if (element.type === "ImageFile") {
+            imageFiles[element.id] = element.attributes.sourceSet;
+          }
+        });
+
+        fetchJson(collectionsJson).then((data) => {});
+
+        const message = "De Correspondent - " + item.attributes.title;
+        response.render("collection", {
+          ...data,
+          item,
+          itemData,
+          message,
+          mainVisuals,
+          imageFiles,
+        });
+        console.log(itemJsonUrl);
+      });
+    }
   });
 });
 

@@ -1,0 +1,19 @@
+<%- include('./partials/head') %>
+
+<!-- Recente afleveringen -->
+<div class="div-content-right">
+  <h3>Recente afleveringen</h3>
+  <section class="section-recent">
+    <% itemData.data.forEach(item => { %>
+
+    <div class="div-container-episode">
+      <div class="div-episode"><%= item.attributes.title %></div>
+
+      <p class="p-maker-episode">Maker aflevering</p>
+    </div>
+
+    <% }); %>
+  </section>
+</div>
+
+<%- include('./partials/foot') %>

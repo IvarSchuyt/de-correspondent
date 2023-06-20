@@ -65,7 +65,7 @@ main {
   );
 }
 
-h2{
+h2 {
   position: absolute;
   color: var(--main-font-color-darkmode);
   font-size: 2rem;
@@ -182,11 +182,13 @@ a figcaption {
 }
 
 .footer-desktop {
-  margin: 0rem 0rem 2rem 5rem;
+  display: none;
 }
 
 ul {
   list-style: none;
+  margin: 0rem 0rem 2rem 5rem;
+  color: var(--main-font-color-darkmode);
 }
 
 /* DESKTOPVERSIE ------------------------------------------------------------ */
@@ -194,25 +196,45 @@ ul {
 /* DESKTOPVERSIE ------------------------------------------------------------ */
 
 @media only screen and (min-width: 850px) {
+  main {
+    display: flex;
+  }
+
+  .div-half-page-left{
+    margin-left: 12.5rem;
+  }
+
+  .section-featured {
+    max-width: 40%;
+  }
+
   .img-featured-placeholder {
     height: auto;
-    width: 35%;
+    max-width: 40%;
   }
+
+  .div-featured-opacity {
+    max-width: 40%;
+    max-height: 5%;
+  }
+
   .div-shows-and-episodes {
     display: flex;
     margin-top: 2rem;
     margin-left: 4rem;
+    max-width: 40%;
   }
+
   .section-our-shows,
   .section-recent {
     flex-wrap: wrap;
-    overflow-x: visible;
   }
+
   .footer-mobile {
     display: none;
   }
+
   .footer-desktop {
     display: block;
-    color: var(--main-font-color-darkmode);
   }
 }
