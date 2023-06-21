@@ -43,6 +43,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%);
+
 }
 
 .img-featured-placeholder {
@@ -55,7 +57,34 @@ h2 {
   position: absolute;
   color: var(--main-font-color-darkmode);
   font-size: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.div-author-avatar{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  height: 5rem;
+  width: 10rem;
+}
+
+.div-background-avatar, .img-author-avatar{
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+}
+
+.div-background-avatar{
+  background: #9ECECA;
+  border-radius: 50%;
+}
+
+.span-author{
+  margin-top: 3rem;
+  color: #9ECECA;
+  font-size: 0.8rem;
 }
 
 h3 {
@@ -97,9 +126,6 @@ h3 {
 }
 
 .div-container-episode {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 10rem;
 }
 
@@ -149,14 +175,20 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
-  align-items: baseline;
+  padding: 0 1rem;
+  margin-left: 1rem;
 }
 
 .img-collection-placeholder {
   width: 10rem;
   height: 10rem;
   border-radius: var(--common-border-radius);
+}
+
+.div-episode-whole{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Footer ------------------------------------------------------------ */
@@ -218,6 +250,10 @@ ul {
   color: var(--main-font-color-darkmode);
 }
 
+li h4{
+  margin-bottom: 1rem;
+}
+
 /* DESKTOPVERSIE ------------------------------------------------------------ */
 /* DESKTOPVERSIE ------------------------------------------------------------ */
 /* DESKTOPVERSIE ------------------------------------------------------------ */
@@ -264,6 +300,11 @@ ul {
     padding-right: 5rem;
   }
 
+  .section-recent {
+    padding: 0 5rem;
+    margin-left: 2rem;
+  }
+
   .footer-mobile {
     display: none;
   }
@@ -271,4 +312,9 @@ ul {
   .footer-desktop {
     display: block;
   }
+
+  ul {
+    margin-left: 7rem;
+  }
+
 }

@@ -5,8 +5,14 @@
         <div class="div-half-page-left">
                 <h3> Uitgelicht </h3>
         <section class="section-featured">
-            <img class="img-featured-placeholder" src="/assets/placeholder.webp" alt="placeholderafbeelding" height="300" width="300"/>
-            <h2>Uitgelichte aflevering</h2>
+            <img class="img-featured-placeholder" src="/assets/placeholder.webp" alt="uitgelichte aflevering" height="300" width="300"/>
+            <h2>Dit is een interessante aflevering</h2>
+            <div class="div-author-avatar">
+                <div class="div-background-avatar"></div>
+                <img src="/assets/placeholder-author.webp" alt="auteur van deze aflevering" class="img-author-avatar" height="30" width="30"/>
+                <span class="span-author">Jan Janssen</span>
+            </div>
+
         </section>
         </div>
 
@@ -25,7 +31,7 @@
                 class="a-show"
                 href="/collection/<%= collection.attributes.slug %>">
                 <picture class="picture-show">
-                        <img  srcset=".<%= imageFiles[mainVisuals[collection.relationships.mainVisual.data.id]] %>" alt="<%= collection.attributes.title %>" width="320" height="320" />
+                        <img  srcset=".<%= imageFiles[mainVisuals[collection.relationships.mainVisual.data.id]] %>" alt="<%= collection.attributes.title %>" width="320" height="320" loading="lazy"/>
                 </picture>
                 <p class="p-show-title"><%= collection.attributes.title %></p>
                 </a>
