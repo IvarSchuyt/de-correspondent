@@ -96,7 +96,7 @@ h3 {
 .section-our-shows {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   margin: 0 1rem;
   overflow-x: scroll;
 }
@@ -141,7 +141,7 @@ h3 {
 
 .p-maker-episode {
   color: #cf635c;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -251,7 +251,7 @@ ul {
 }
 
 li h4{
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* DESKTOPVERSIE ------------------------------------------------------------ */
@@ -266,15 +266,16 @@ li h4{
   .div-half-page-left,
   .div-half-page-right {
     width: 50vw;
+    padding-bottom: 5rem;
   }
 
   .section-featured {
     max-width: 80%;
-    margin: 3rem 0 0 12.5rem;
+    margin: 3rem 0 0 10rem;
   }
 
   .div-half-page-left h3 {
-    margin: 4rem 0 0 15rem;
+    margin: 4rem 0 0 12rem;
   }
 
   .img-featured-placeholder {
@@ -301,8 +302,8 @@ li h4{
   }
 
   .section-recent {
-    padding: 0 5rem;
-    margin-left: 2rem;
+    padding: 0 13rem;
+    margin-left: 5rem;
   }
 
   .footer-mobile {
@@ -314,7 +315,7 @@ li h4{
   }
 
   ul {
-    margin-left: 7rem;
+    margin-left: 18rem;
   }
 
 }
