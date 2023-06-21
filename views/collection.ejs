@@ -1,19 +1,22 @@
 <%- include('./partials/head') %>
 
+<main class="main-collection">
+  
+<h2 class="h2-collection"><%= item.attributes.title %></h2>
+
 <!-- Recente afleveringen -->
 <div class="div-content-right">
-  <h3>Recente afleveringen</h3>
   <section class="section-recent">
     <% itemData.data.forEach(item => { %>
-
-    <div class="div-container-episode">
-      <div class="div-episode"><%= item.attributes.title %></div>
-
+      <div class="div-container-episode">
+      <img class="img-collection-placeholder" src="/assets/placeholder.webp" alt="placeholderafbeelding" height="300" width="300"/>
+      <p class="p-title-episode"><%= item.attributes.title %></p>
       <p class="p-maker-episode">Maker aflevering</p>
     </div>
-
     <% }); %>
   </section>
 </div>
+
+</main>
 
 <%- include('./partials/foot') %>

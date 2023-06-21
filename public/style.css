@@ -64,8 +64,7 @@ h3 {
   color: var(--main-font-color-darkmode);
 }
 
-.section-our-shows,
-.section-recent {
+.section-our-shows {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -100,13 +99,18 @@ h3 {
 .div-container-episode {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 10rem;
 }
 
 .div-episode {
-  background-color: white;
   width: 10rem;
   height: 10rem;
   border-radius: var(--common-border-radius);
+}
+
+.p-title-episode {
+  color: var(--main-font-color-darkmode);
 }
 
 .p-maker-episode {
@@ -125,6 +129,34 @@ h3 {
   flex-wrap: wrap;
   gap: 1rem;
   margin: 0 1rem;
+}
+
+/* Collection ------------------------------------------------------------ */
+/* Collection ------------------------------------------------------------ */
+/* Collection ------------------------------------------------------------ */
+
+.main-collection {
+  display: flex;
+  justify-content: center;
+}
+
+.div-content-right {
+  margin-top: 5rem;
+}
+
+.section-recent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.img-collection-placeholder {
+  width: 10rem;
+  height: 10rem;
+  border-radius: var(--common-border-radius);
 }
 
 /* Footer ------------------------------------------------------------ */
@@ -227,7 +259,7 @@ ul {
     overflow: visible;
   }
 
-  .section-our-shows{
+  .section-our-shows {
     min-width: 50%;
     padding-right: 5rem;
   }
