@@ -31,6 +31,7 @@ De code van de site bestaat uit EJS, HTML, CSS en JS. Met behulp van Node en Exp
 2. Open de server en typ 'npm install' + het volgende: 'express, ejs en node-fetch'.
 3. Neem .gitignoreop zodat de node_modulesniet online worden gezet.
 4. Om de server te starten typ je 'npm start'
+
 Er is geen '.env' gebruikt in dit project.
 
 
