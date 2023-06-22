@@ -14,6 +14,12 @@
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
+### Visual
+![image](https://github.com/IvarSchuyt/de-correspondent/assets/112855849/e943ca66-56fb-417a-bfb8-8ff5be012b63)
+
+### Link live-site
+https://de-correspondent.adaptable.app/
+
 ## Gebruik
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
 
