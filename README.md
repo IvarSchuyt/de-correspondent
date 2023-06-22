@@ -19,11 +19,10 @@ De Correspondent heeft onder andere mij gevraagd om een webversie van hun podcas
 https://de-correspondent.adaptable.app/
 
 ## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
 Ik heb een prototype van een podcast web-app gemaakt voor De Correspondent. De site werkt vrijwel hetzelfde als de bestaande app, maar heeft ook een nieuwe desktopversie gekregen. De mobiele versie heeft 3 knoppen als navigatie: de eerste is voor home, de tweede voor recente aflvereringen en de derde voor meer opties. Het logo bovenaan de pagina werkt óók als homeknop.
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
+De code van de site bestaat uit EJS, HTML, CSS en JS. Met behulp van Node en Express zijn de JSON bestanden aan de site gekoppeld via de index.js. Vervolgens zijn verschillende elementen uit de JSON bestanden ingeladen door ze aan te roepen met EJS.
 
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
