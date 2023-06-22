@@ -26,8 +26,13 @@ De code van de site bestaat uit EJS, HTML, CSS en JS. Met behulp van Node en Exp
 
 ## Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
+### Werken met deze repository:
+1. Fork deze repository op GitHub.
+2. Open de server en typ 'npm install' + het volgende: 'express, ejs en node-fetch'.
+3. Neem .gitignoreop zodat de node_modulesniet online worden gezet.
+4. Om de server te starten typ je 'npm start'
+Er is geen '.env' gebruikt in dit project.
 
-## Bronnen
 
 ## Licentie
 
