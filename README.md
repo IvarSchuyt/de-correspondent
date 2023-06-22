@@ -13,6 +13,8 @@
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+De Correspondent heeft onder andere mij gevraagd om een webversie van hun podcast-app te maken. Ik heb een responsive web-app gemaakt die qua stijl lijkt op de originele app.
+
 
 ### Visual
 ![image](https://github.com/IvarSchuyt/de-correspondent/assets/112855849/e943ca66-56fb-417a-bfb8-8ff5be012b63)
